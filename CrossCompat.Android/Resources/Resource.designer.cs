@@ -1976,8 +1976,8 @@ namespace CrossCompat.Android
 			// aapt resource value: 0x7f0a0026
 			public const int listMode = 2131361830;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int listPosts = 2131361919;
+			// aapt resource value: 0x7f0a0080
+			public const int listPosts = 2131361920;
 			
 			// aapt resource value: 0x7f0a0042
 			public const int list_item = 2131361858;
@@ -2144,6 +2144,9 @@ namespace CrossCompat.Android
 			// aapt resource value: 0x7f0a0049
 			public const int title_template = 2131361865;
 			
+			// aapt resource value: 0x7f0a007e
+			public const int toolbar = 2131361918;
+			
 			// aapt resource value: 0x7f0a001d
 			public const int top = 2131361821;
 			
@@ -2159,8 +2162,8 @@ namespace CrossCompat.Android
 			// aapt resource value: 0x7f0a0000
 			public const int view_offset_helper = 2131361792;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int webView = 2131361918;
+			// aapt resource value: 0x7f0a007f
+			public const int webView = 2131361919;
 			
 			// aapt resource value: 0x7f0a0039
 			public const int withText = 2131361849;
@@ -2360,10 +2363,13 @@ namespace CrossCompat.Android
 			public const int support_simple_spinner_dropdown_item = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int View_Post = 2130968625;
+			public const int toolbar = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int View_Posts = 2130968626;
+			public const int View_Post = 2130968626;
+			
+			// aapt resource value: 0x7f040033
+			public const int View_Posts = 2130968627;
 			
 			static Layout()
 			{

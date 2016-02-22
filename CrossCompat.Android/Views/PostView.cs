@@ -4,6 +4,7 @@ using Android.Views;
 using Android.Webkit;
 using CrossCompat.Android.Infrastructure;
 using CrossCompat.Core.ViewModels;
+using Android.Support.V7.Widget;
 
 namespace CrossCompat.Android.Views
 {
@@ -16,13 +17,17 @@ namespace CrossCompat.Android.Views
 		{
 			base.OnCreate(bundle);
 
+			SetContentView(Resource.Layout.View_Post);
+
+			var toolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
+
+			SetSupportActionBar (toolbar);
+
 			var actionBar = SupportActionBar;
 			if (actionBar != null)
 			{
 				actionBar.SetDisplayHomeAsUpEnabled (true);
 			}
-
-			SetContentView(Resource.Layout.View_Post);
 
 			webView = FindViewById<WebView> (Resource.Id.webView);
 
