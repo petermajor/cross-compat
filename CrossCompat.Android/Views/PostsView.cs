@@ -1,12 +1,12 @@
-﻿using Cirrious.MvvmCross.Droid.Views;
-using Android.App;
+﻿using Android.App;
 using Android.OS;
+using CrossCompat.Android.Infrastructure;
 using CrossCompat.Core.ViewModels;
 
 namespace CrossCompat.Android.Views
 {
 	[Activity(MainLauncher=true)]
-	public class PostsView : MvxActivity<PostsViewModel>
+	public class PostsView : MvxAppCompatActivity<PostsViewModel>
 	{
 		protected override void OnCreate(Bundle bundle)
 		{

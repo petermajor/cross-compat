@@ -89,6 +89,8 @@
     <Compile Include="Views\PostsView.cs" />
     <Compile Include="Converters\TextToSpannableValueConverter.cs" />
     <Compile Include="Views\PostView.cs" />
+    <Compile Include="Infrastructure\MvxAppCompatActivity.cs" />
+    <Compile Include="Infrastructure\MvxEventSourceAppCompatActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -116,6 +118,7 @@
     <Folder Include="Resources\layout\" />
     <Folder Include="Views\" />
     <Folder Include="Converters\" />
+    <Folder Include="Infrastructure\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
