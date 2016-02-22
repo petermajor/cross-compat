@@ -1,9 +1,9 @@
 ﻿using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Cirrious.MvvmCross.ViewModels;
 using CrossCompat.Core.Commands;
 using CrossCompat.Core.Models;
+using MvvmCross.Core.ViewModels;
 using PropertyChanged;
 
 namespace CrossCompat.Core.ViewModels

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using Android.Text;
-using Cirrious.CrossCore.Converters;
+using MvvmCross.Platform.Converters;
 
 namespace CrossCompat.Android.Converters
 {

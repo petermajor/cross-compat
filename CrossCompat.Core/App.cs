@@ -1,10 +1,10 @@
-﻿using Cirrious.MvvmCross.ViewModels;
-using CrossCompat.Core.ViewModels;
-using Cirrious.CrossCore.IoC;
-using Cirrious.CrossCore;
-using System.Net.Http;
-using ModernHttpClient;
+﻿using System.Net.Http;
 using CrossCompat.Core.Models;
+using CrossCompat.Core.ViewModels;
+using ModernHttpClient;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
+using MvvmCross.Platform.IoC;
 
 namespace CrossCompat.Core
 {

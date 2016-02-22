@@ -1,12 +1,12 @@
 ﻿using Android.App;
 using Android.OS;
-using CrossCompat.Android.Infrastructure;
-using CrossCompat.Core.ViewModels;
 using Android.Support.V7.Widget;
+using CrossCompat.Core.ViewModels;
+using MvvmCross.Droid.Support.V7.AppCompat;
 
 namespace CrossCompat.Android.Views
 {
-	[Activity(MainLauncher=true)]
+	[Activity]
 	public class PostsView : MvxAppCompatActivity<PostsViewModel>
 	{
 		protected override void OnCreate(Bundle bundle)

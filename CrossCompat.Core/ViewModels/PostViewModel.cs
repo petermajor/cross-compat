@@ -1,5 +1,5 @@
-﻿using PropertyChanged;
-using Cirrious.MvvmCross.ViewModels;
+﻿using MvvmCross.Core.ViewModels;
+using PropertyChanged;
 
 namespace CrossCompat.Core.ViewModels
 {

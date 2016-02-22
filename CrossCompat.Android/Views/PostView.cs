@@ -1,10 +1,10 @@
 ﻿using Android.App;
 using Android.OS;
+using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Webkit;
-using CrossCompat.Android.Infrastructure;
 using CrossCompat.Core.ViewModels;
-using Android.Support.V7.Widget;
+using MvvmCross.Droid.Support.V7.AppCompat;
 
 namespace CrossCompat.Android.Views
 {
