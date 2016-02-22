@@ -2,6 +2,9 @@
 <resources>
   <style name="MyTheme" parent="MyTheme.Base">
   </style>
-  <style name="MyTheme.Base" parent="android:Theme.Holo.Light">
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorAccent">@color/accent</item>
   </style>
 </resources>
