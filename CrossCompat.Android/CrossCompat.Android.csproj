@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{387841C9-0691-4AA9-8552-0C537AF2CA06}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CrossCompat.Android</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>CrossCompat.Android</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Cirrious.CrossCore.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="ModernHttpClient">
+      <HintPath>..\packages\modernhttpclient.2.4.2\lib\MonoAndroid\ModernHttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="OkHttp">
+      <HintPath>..\packages\modernhttpclient.2.4.2\lib\MonoAndroid\OkHttp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="Views\PostsView.cs" />
+    <Compile Include="Converters\TextToSpannableValueConverter.cs" />
+    <Compile Include="Views\PostView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\View_Posts.axml" />
+    <AndroidResource Include="Resources\values\MvxBindingAttributes.xml" />
+    <AndroidResource Include="Resources\layout\Item_Post.axml" />
+    <AndroidResource Include="Resources\layout\View_Post.axml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\values\Theme.xml" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Views\" />
+    <Folder Include="Converters\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <ItemGroup>
+    <ProjectReference Include="..\CrossCompat.Core\CrossCompat.Core.csproj">
+      <Project>{EB8FBBDC-66FF-4E52-A1E3-0E2C77BFAE25}</Project>
+      <Name>CrossCompat.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

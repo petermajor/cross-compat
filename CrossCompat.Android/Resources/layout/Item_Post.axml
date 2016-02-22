@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Posts_Item">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Posts_Title"
+        local:MvxBind="Text Title" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Posts_PublicationDate"
+        local:MvxBind="Text PublicationDate" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Posts_Description"
+        android:bufferType="spannable"
+        local:MvxBind="TextFormatted Description, Converter=TextToSpannable" />
+</LinearLayout>
