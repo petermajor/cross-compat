@@ -1868,6 +1868,9 @@ namespace CrossCompat.Android
 			// aapt resource value: 0x7f0a0036
 			public const int always = 2131361846;
 			
+			// aapt resource value: 0x7f0a007f
+			public const int appbar = 2131361919;
+			
 			// aapt resource value: 0x7f0a0034
 			public const int beginning = 2131361844;
 			
@@ -2003,8 +2006,8 @@ namespace CrossCompat.Android
 			// aapt resource value: 0x7f0a0027
 			public const int listMode = 2131361831;
 			
-			// aapt resource value: 0x7f0a0081
-			public const int listPosts = 2131361921;
+			// aapt resource value: 0x7f0a0082
+			public const int listPosts = 2131361922;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int list_item = 2131361859;
@@ -2171,8 +2174,8 @@ namespace CrossCompat.Android
 			// aapt resource value: 0x7f0a004a
 			public const int title_template = 2131361866;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int toolbar = 2131361919;
+			// aapt resource value: 0x7f0a0080
+			public const int toolbar = 2131361920;
 			
 			// aapt resource value: 0x7f0a001e
 			public const int top = 2131361822;
@@ -2189,8 +2192,8 @@ namespace CrossCompat.Android
 			// aapt resource value: 0x7f0a0000
 			public const int view_offset_helper = 2131361792;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int webView = 2131361920;
+			// aapt resource value: 0x7f0a0081
+			public const int webView = 2131361921;
 			
 			// aapt resource value: 0x7f0a003a
 			public const int withText = 2131361850;
@@ -2950,11 +2953,11 @@ namespace CrossCompat.Android
 			// aapt resource value: 0x7f060001
 			public const int Base_Widget_Design_TabLayout = 2131099649;
 			
-			// aapt resource value: 0x7f060148
-			public const int MyTheme = 2131099976;
+			// aapt resource value: 0x7f060144
+			public const int MyTheme = 2131099972;
 			
-			// aapt resource value: 0x7f060149
-			public const int MyTheme_Base = 2131099977;
+			// aapt resource value: 0x7f060145
+			public const int MyTheme_Base = 2131099973;
 			
 			// aapt resource value: 0x7f060021
 			public const int Platform_AppCompat = 2131099681;
@@ -2986,17 +2989,17 @@ namespace CrossCompat.Android
 			// aapt resource value: 0x7f060025
 			public const int Platform_Widget_AppCompat_Spinner = 2131099685;
 			
-			// aapt resource value: 0x7f060147
-			public const int Posts_Description = 2131099975;
-			
-			// aapt resource value: 0x7f060144
-			public const int Posts_Item = 2131099972;
-			
-			// aapt resource value: 0x7f060145
-			public const int Posts_PublicationDate = 2131099973;
+			// aapt resource value: 0x7f060149
+			public const int Posts_Description = 2131099977;
 			
 			// aapt resource value: 0x7f060146
-			public const int Posts_Title = 2131099974;
+			public const int Posts_Item = 2131099974;
+			
+			// aapt resource value: 0x7f060147
+			public const int Posts_PublicationDate = 2131099975;
+			
+			// aapt resource value: 0x7f060148
+			public const int Posts_Title = 2131099976;
 			
 			// aapt resource value: 0x7f060032
 			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131099698;

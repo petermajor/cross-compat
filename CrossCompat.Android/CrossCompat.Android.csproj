@@ -94,6 +94,12 @@
       <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\MonoAndroid\MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android.Export" />
+    <Reference Include="MvvmCross.Droid.Support.V7.RecyclerView">
+      <HintPath>..\packages\MvvmCross.Droid.Support.V7.RecyclerView.4.0.1\lib\MonoAndroid403\MvvmCross.Droid.Support.V7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Droid.Support.Design">
+      <HintPath>..\packages\MvvmCross.Droid.Support.Design.4.0.1\lib\MonoAndroid403\MvvmCross.Droid.Support.Design.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -122,16 +128,17 @@
     <AndroidResource Include="Resources\layout\Item_Post.axml" />
     <AndroidResource Include="Resources\layout\View_Post.axml" />
     <AndroidResource Include="Resources\values\Styles.xml" />
-    <AndroidResource Include="Resources\values\Theme.xml" />
     <AndroidResource Include="Resources\values\Colors.xml" />
     <AndroidResource Include="Resources\layout\toolbar.xml" />
     <AndroidResource Include="Resources\layout\splash_screen.axml" />
+    <AndroidResource Include="Resources\values-v21\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\layout\" />
     <Folder Include="Views\" />
     <Folder Include="Converters\" />
+    <Folder Include="Resources\values-v21\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
