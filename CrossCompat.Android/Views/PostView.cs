@@ -21,6 +21,9 @@ namespace CrossCompat.Android.Views
 
 			SetContentView(Resource.Layout.View_Post);
 
+			if (ActionBar != null)
+				ActionBar.SetDisplayHomeAsUpEnabled (true);
+
 			webView = FindViewById<WebView> (Resource.Id.webView);
 
 			webView.Settings.JavaScriptEnabled = true;
